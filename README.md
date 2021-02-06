@@ -20,7 +20,7 @@ The Machine Learning models were trained using Kaggle's Heart Failure Clinical [
 
 ### Overview
 The Heart Failure Dataset used in this project can be found in [Kaggle](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The Heart failure dataset has total 13 columns which are age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure,	platelets, serum_creatinine,	serum_sodium, sex,	smoking,	time and	DEATH_EVENT. The dependent vaiable is DEATH_EVENT.
-  
+  ![Dataset ](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/database_excel.PNG "Heart Failure Dataset")
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
