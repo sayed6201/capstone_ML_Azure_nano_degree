@@ -2,18 +2,19 @@
 
 # Heart Failure Prediction
 
-*TODO:* Write a short introduction to your project 
-This Machine Learning project aims to predict if a patient from heart failure. The Machine Learning models were trained using Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
+The Machine Learning models were trained using Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
 
 ## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
   1. Create compute instance and compute cluster in Azure
-      ![Cluster](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/cluster.png "Created Cluster configuration")
+      ![Cluster](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/cluster.png "Created compute cluster configuration")
          
   2. Download the Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) and upload it in Azure
-      ![Dataset registered](https://github.com/sayed6201/operationalizing_machine_learning/blob/master/screenshots/sayed_dataset_registered.PNG "Dataset registered")
-
+      ![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_create.PNG "Uloading dataset from local to Azure")
+      
+  3. Import the Dataset into the Notebooks
+  
+  4. Import the dependencies and run all the cells
 
 ## Dataset
 
