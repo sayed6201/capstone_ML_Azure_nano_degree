@@ -1,11 +1,14 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-# Your Project Title Here
+# Heart Failure Prediction
 
-*TODO:* Write a short introduction to your project.
+*TODO:* Write a short introduction to your project 
+This Machine Learning project aims to predict if a patient from heart failure. The Machine Learning models were trained using Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+
+
 
 ## Dataset
 
