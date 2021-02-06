@@ -20,15 +20,21 @@ The Machine Learning models were trained using Kaggle's Heart Failure Clinical [
 
 ### Overview
 The Heart Failure Dataset used in this project can be found in [Kaggle](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The Heart failure dataset has total 13 columns which are age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure,	platelets, serum_creatinine,	serum_sodium, sex,	smoking,	time and	DEATH_EVENT. The dependent vaiable is DEATH_EVENT.
-
+  
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
-The task of this project is classification. The trained ML model aims to determine value of DEATH_EVENT.
+The task of this project is classification. The trained ML model aims to determine value of DEATH_EVENT based on the other 12 features. 
 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+
+First i downloaded the dataset from kaggle then uploaded and registered the dataset into Azure ML Studio as "heart-failure-sayed".
+![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_overview.png "Dataset")
+
+Screenshot below shows accessing the dataset in automl python notebook and train python script using Dataset.get_by_name()
+![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_access_automl.PNG.png "Accessing dataset in notebook")
+
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
