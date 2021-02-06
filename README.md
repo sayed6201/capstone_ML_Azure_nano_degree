@@ -19,10 +19,13 @@ The Machine Learning models were trained using Kaggle's Heart Failure Clinical [
 ## Dataset
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+The Heart Failure Dataset used in this project can be found in [Kaggle](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The Heart failure dataset has total 13 columns which are age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure,	platelets, serum_creatinine,	serum_sodium, sex,	smoking,	time and	DEATH_EVENT. The dependent vaiable is DEATH_EVENT.
+
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The task of this project is classification. The trained ML model aims to determine value of DEATH_EVENT.
+
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
