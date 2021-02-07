@@ -1,7 +1,9 @@
 
 # Heart Failure Prediction
 
-The Machine Learning models were trained using Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
+## Overview
+
+The aim of the project is predict whether a ptient will suffer from heart failure. To train the Machine Learning models Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) was used. The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
 
 ## Project Set Up and Installation
 
