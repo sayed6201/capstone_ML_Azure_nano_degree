@@ -33,7 +33,7 @@ First i downloaded the dataset from kaggle then uploaded and registered the data
 ![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_overview.png "Dataset")
 
 Screenshot below shows accessing the dataset in automl python notebook and train python script using Dataset.get_by_name()
-![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_access_automl.PNG.png "Accessing dataset in notebook")
+![Dataset registered](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/dataset_access_automl.PNG "Accessing dataset in notebook")
 
 
 ## Automated ML
