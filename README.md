@@ -62,7 +62,6 @@ I have specified following settings and configuration for AutoML
    ![AutoML config](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_config_settings.PNG "Settings and Config for AutoML")
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 Among the trained models through AutoML VotingEnsamble outperformed all other models. The Accuracy of AutoML was 86%. The model can be further improved by enriching the dataset with more data, applying more feature engineering, choosing AUC matrics instead accuracy.
 
@@ -76,17 +75,15 @@ Among the trained models through AutoML VotingEnsamble outperformed all other mo
   ![VotingEnsamble](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/tags_bestmodel_automl.PNG "VotingEnsamble Model Detail")
   
   
-  The screenshot below shows AutoML completion status with other information
+  The screenshot below shows AutoML ongoing RunDetails widget
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/rundetail_running.png "AutoML RunDetails Running")
+  
+  The screenshot below shows AutoML RunDetails widget after a successful completion
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/runwidget_automl.png "AutoML RunDetails Completed")
+  
+  The screenshot below shows AutoML completion status with detail information
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_completed.png "AutoML Completed")
   
-  The screenshot below shows AutoML completion status with other information
-  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_completed.png "AutoML Completed")
-  
-  
-  
-  
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
