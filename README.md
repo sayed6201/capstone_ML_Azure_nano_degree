@@ -92,7 +92,10 @@ Among the trained models through AutoML VotingEnsamble outperformed all other mo
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
-I chose LogisticRegression model to predict the value of the dependent variable. As it is a classification problem so LogisticRegression can perform better in this regard. The 2 parameters that i tuned using hyperdrive are described below:
+I chose LogisticRegression model to predict the value of the dependent variable. As it is a classification problem so LogisticRegression can perform better in this regard. 
+Among the parameter sampling methods i chose random sampling method where hyperparameter values are randomly selected from the defined search space. It also supports early termination of low-performance runs. Furthermore,for the early stopping policy i chose Bandit policy with slack factor of 0.1, which will terminate runs where the primary metric is not within the specified slack factor compared to the best performing run.
+
+The 2 parameters that i tuned using hyperdrive these are described below:
           1. '--C': choice(0.01,5,20,100,500)
               * This parameter is an inverse of regularization strength. Larger values cause weaker and smaller values cause stronger regularization. I chose 0.01,5,20,100,500 and the best model had inverse of regularization strength of 0.01, 500 and 100.
           2. '--max_iter': choice(10,50,100,150,200)
