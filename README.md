@@ -38,6 +38,26 @@ Screenshot below shows accessing the dataset in automl python notebook and train
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+I have specified following settings and configuration for AutoML 
+   * task: 'classification' 
+        * The aim is to find if a ptient will die or survive. Hence it's a classification task
+   * primary_metric: 'Accuracy' 
+        * Based on Accuracy metric the AutoML will optimize for model selection. 
+   * n_cross_validations: 5
+        * It indicates the number of cross validations to be performed
+   * training_data: my_training_ds 
+        * Data to be used for training the model. my_training_ds is a TabularDataset
+   * max_concurrent_iterations: 4
+        * Rrefers to the maximum number of iterations executed in parallel
+   * enable_early_stopping: True
+        * It will early terminate if the score does not improve further.
+   * label_column_name: 'DEATH_EVENT'
+        * label of column that will be predicted by the model.
+   * max_cores_per_iteration: -1
+        * Refers to The maximum number of threads to be used for training iteration
+   * experiment_timeout_minutes: 30
+        * Indicates maximum amount of time that all iterations combined can take before the experiment terminates.
+   
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
