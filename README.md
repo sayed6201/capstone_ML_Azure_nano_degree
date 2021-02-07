@@ -44,25 +44,47 @@ I have specified following settings and configuration for AutoML
    * primary_metric: 'Accuracy' 
         * Based on Accuracy metric the AutoML will optimize for model selection. 
    * n_cross_validations: 5
-        * It indicates the number of cross validations to be performed
+        * It indicates the number of cross validations to be performed. It helps to detect overfitting
    * training_data: my_training_ds 
         * Data to be used for training the model. my_training_ds is a TabularDataset
    * max_concurrent_iterations: 4
-        * Rrefers to the maximum number of iterations executed in parallel
+        * Rrefers to the maximum number of iterations executed in parallel. I set it to 4 to limit the resource consumption.
    * enable_early_stopping: True
-        * It will early terminate if the score does not improve further.
+        * It will early terminate if the score does not improve further and save the resource. 
    * label_column_name: 'DEATH_EVENT'
         * label of column that will be predicted by the model.
    * max_cores_per_iteration: -1
         * Refers to The maximum number of threads to be used for training iteration
    * experiment_timeout_minutes: 30
-        * Indicates maximum amount of time that all iterations combined can take before the experiment terminates.
+        * Indicates maximum amount of time that all iterations combined can take before the experiment terminates
    
    The screenshot below shows the settings and configuration for AutoML in the Notebook
    ![AutoML config](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_config_settings.PNG "Settings and Config for AutoML")
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+
+Among the trained models through AutoML VotingEnsamble outperformed all other models. The Accuracy of AutoML was 86%. The model can be further improved by enriching the dataset with more data, applying more feature engineering, choosing AUC matrics instead accuracy.
+
+  The screenshot below shows some of the models with higest accuracy
+  ![AutoML models](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_models.png "Trained Models through AutoML")
+  
+  The screenshot below shows All the matrices of the VotingEnsamble model
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/best_model_automl_mterics.png "Best Model metrics")
+  
+  VotingEnsamble model ensambled a number of classifiers to derive the prediction result such as XBoosClassifier, RandomForest, LightGBM, GradientBoosting.
+  ![VotingEnsamble](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/tags_bestmodel_automl.PNG "VotingEnsamble Model Detail")
+  
+  
+  The screenshot below shows AutoML completion status with other information
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_completed.png "AutoML Completed")
+  
+  The screenshot below shows AutoML completion status with other information
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_completed.png "AutoML Completed")
+  
+  
+  
+  
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
