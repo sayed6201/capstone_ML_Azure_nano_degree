@@ -37,7 +37,7 @@ Screenshot below shows accessing the dataset in automl python notebook and train
 
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
 I have specified following settings and configuration for AutoML 
    * task: 'classification' 
         * The aim is to find if a ptient will die or survive. Hence it's a classification task
@@ -58,6 +58,8 @@ I have specified following settings and configuration for AutoML
    * experiment_timeout_minutes: 30
         * Indicates maximum amount of time that all iterations combined can take before the experiment terminates.
    
+   The screenshot below shows the settings and configuration for AutoML in the Notebook
+   ![AutoML config](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_config_settings.PNG "Settings and Config for AutoML")
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
