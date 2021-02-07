@@ -135,7 +135,9 @@ I have deployed AutoML VotingEnsamble model. First i registered the model then d
   
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+[ View screencast for this project](https://youtu.be/hAy0Au5NcIc)
+
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
