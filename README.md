@@ -1,4 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 # Heart Failure Prediction
 
@@ -90,7 +89,6 @@ Among the trained models through AutoML VotingEnsamble outperformed all other mo
   
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 I chose LogisticRegression model to predict the value of the dependent variable. As it is a classification problem so LogisticRegression can perform better in this regard. 
 Among the parameter sampling methods i chose random sampling method where hyperparameter values are randomly selected from the defined search space. It also supports early termination of low-performance runs. Furthermore,for the early stopping policy i chose Bandit policy with slack factor of 0.1, which will terminate runs where the primary metric is not within the specified slack factor compared to the best performing run.
@@ -104,13 +102,26 @@ The 2 parameters that i tuned using hyperdrive these are described below:
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/ps.PNG "Specifying parameter sampler")
           
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
+The accuracy of best performing model was 91.6%. For the best performing model the --C or inverse of regularization strength value was 0.01 and --max_iter or max iteration was 100. 
+To improve the model further ensamble algorithms can be used, the dataset can be enriched and AUC metrics can be used instead of accuracy.
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+  The screenshot below shows best performing models with their hyperparameters. 
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/hyperdrive_models.PNG "Hyperdrive Best models")
+ 
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/hyperdrive_accuracy_map.png "")
+  
+  The screenshot below shows Hyperdrive RunDetails widget after a successful completion.
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/rundetail_hyperparam.png "Hyperdrive Best models")
+  
+  Registering best hyperdrive model
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/registering_hyperdrive.png "Registering best hyperdrive model")
+  
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
