@@ -74,7 +74,6 @@ Among the trained models through AutoML VotingEnsamble outperformed all other mo
   VotingEnsamble model ensambled a number of classifiers to derive the prediction result such as XBoosClassifier, RandomForest, LightGBM, GradientBoosting.
   ![VotingEnsamble](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/tags_bestmodel_automl.PNG "VotingEnsamble Model Detail")
   
-  
   The screenshot below shows AutoML ongoing RunDetails widget
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/rundetail_running.png "AutoML RunDetails Running")
   
@@ -84,13 +83,26 @@ Among the trained models through AutoML VotingEnsamble outperformed all other mo
   The screenshot below shows AutoML completion status with detail information
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/automl_completed.png "AutoML Completed")
   
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/accuracy_plot_automl.png "AutoML Run Accuracy Plot")
+  
+  The screenshot below shows registration of the best performing AutoML model. 
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/registering_automl.PNG "AutoML Run Accuracy Plot")
+  
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
-
+I chose LogisticRegression model to predict the value of the dependent variable. As it is a classification problem so LogisticRegression can perform better in this regard. The 2 parameters that i tuned using hyperdrive are described below:
+          1. '--C': choice(0.01,5,20,100,500)
+              * This parameter is an inverse of regularization strength. Larger values cause weaker and smaller values cause stronger regularization. I chose 0.01,5,20,100,500 and the best model had inverse of regularization strength of 0.01, 500 and 100.
+          2. '--max_iter': choice(10,50,100,150,200)
+              * The discrete values chosen for Max iteration were 10,50,100,150,200. the best model had Max iteration of 100, 150, 50.
+          
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/ps.PNG "Specifying parameter sampler")
+          
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
