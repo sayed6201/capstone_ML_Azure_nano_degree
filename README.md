@@ -1,8 +1,6 @@
 
 # Heart Failure Prediction
 
-## Overview
-
 The aim of the project is predict whether a ptient will suffer from heart failure. To train the Machine Learning models Kaggle's Heart Failure Clinical [Datset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) was used. The models were trained using Azure AutoML as well as Hyperdrive. One of the best performing model was then deployed to Azure Container Instance as a Web Service.
 
 ## Project Set Up and Installation
@@ -25,6 +23,7 @@ The Heart Failure Dataset used in this project can be found in [Kaggle](https://
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+
 The task of this project is classification. The trained ML model aims to determine value of DEATH_EVENT based on the other 12 features. 
 
 
@@ -143,5 +142,5 @@ I have deployed AutoML VotingEnsamble model. First i registered the model then d
 
 ## Standout Suggestions
 
-  Application insight is enabled.
+  The image below shows enabled application insight.
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/logging.png "Application insight enabled")
