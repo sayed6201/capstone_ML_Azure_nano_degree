@@ -121,7 +121,17 @@ To improve the model further ensamble algorithms can be used, the dataset can be
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+I have deployed AutoML VotingEnsamble model. First i registered the model then downloaded the score script using best_run.download_file(). Then i defined ACI configuration using AciWebservice.deploy_configuration() where i set cpu cores to 1 and memory resource to 1 GB. Finally the model was deployed as a webservice with application insight enabled.
 
+  The image shows deployment of the model completed successfully
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/deploying_model_notebook.PNG "Deployed webservice from Notebook")
+  
+  Deployed model detail can be seen from the image below. The status shows as healthy
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/deployed_healthy_status.png "Deployed model detail")
+  
+  Queries can be sent to the deployed model in the following formate. The image below shows a sent request to the deployed model and the received response.
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/sending_requst.PNG "Sending request to deployed model")
+  
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
@@ -130,4 +140,6 @@ To improve the model further ensamble algorithms can be used, the dataset can be
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+  Application insight is enabled.
+  ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/logging.png "Application insight enabled")
