@@ -96,10 +96,10 @@ I chose LogisticRegression model to predict the value of the dependent variable.
 Among the parameter sampling methods i chose random sampling method where hyperparameter values are randomly selected from the defined search space. It also supports early termination of low-performance runs. Furthermore,for the early stopping policy i chose Bandit policy with slack factor of 0.1, which will terminate runs where the primary metric is not within the specified slack factor compared to the best performing run.
 
 The 2 parameters that i tuned using hyperdrive these are described below:
-          1 '--C': choice(0.01,5,20,100,500)
-              * This parameter is an inverse of regularization strength. Larger values cause weaker and smaller values cause stronger regularization. I chose 0.01,5,20,100,500 and the best model had inverse of regularization strength of 0.01, 500 and 100.
-          2 '--max_iter': choice(10,50,100,150,200)
-              * The discrete values chosen for Max iteration were 10,50,100,150,200. the best model had Max iteration of 100, 150, 50.
+  * '--C': choice(0.01,5,20,100,500)
+       * This parameter is an inverse of regularization strength. Larger values cause weaker and smaller values cause stronger regularization. I chose 0.01,5,20,100,500 and the best model had inverse of regularization strength of 0.01, 500 and 100.
+  * '--max_iter': choice(10,50,100,150,200)
+       * The discrete values chosen for Max iteration were 10,50,100,150,200. the best model had Max iteration of 100, 150, 50.
           
   ![AutoML](https://github.com/sayed6201/capstone_ML_Azure_nano_degree_/blob/master/screenshots/ps.PNG "Specifying parameter sampler")
           
